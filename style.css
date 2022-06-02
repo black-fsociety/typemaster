@@ -25,6 +25,10 @@
     border-radius: 0.3em;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .title {
     color: rgb(22, 37, 66);
     text-transform: uppercase;
@@ -37,13 +41,18 @@
 }
 
 header {
-    border: 1px solid red;
     margin-bottom: 3.125em;
 }
 
 header .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+#intro-img {
+    background-image: url("./assets/desktop/image-keyboard.jpg");
+    background-size: cover;
+    border-radius: 1em;
 }
 
 #header-btn::after {
@@ -56,6 +65,11 @@ header .container {
     float: right;
     background-color: rgb(232, 239, 242);
     color: rgb(22, 37, 66);
+}
+
+#header-btn .btn:hover {
+    background-color: rgb(22, 37, 66);
+    color: rgb(255, 255, 255);
 }
 
 #section-1 {
@@ -104,6 +118,10 @@ header .container {
     margin-right: 1.5em;
 }
 
+#intro .btn:hover {
+    background-color: rgb(255, 155, 98);
+}
+
 #intro span {
     text-transform: uppercase;
     font-family: Barlow;
@@ -140,14 +158,24 @@ header .container {
     gap: 1.5em;
 }
 
-#section-2 img {
-    width: 100%;
+#section-2 div {
     height: 400px;
-    border-radius: 1em;
 }
 
 #section-2 .container div:first-child {
     position: relative;
+    width: 100%;
+    background-image: url("./assets/desktop/image-phone-and-keyboard.jpg");
+    background-size: cover;
+    border-radius: 1em;
+}
+
+#section-2 .container div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    background-image: url("./assets/desktop/image-glass-and-keyboard.jpg");
+    background-size: cover;
+    border-radius: 1em;
 }
 
 #section-2 .container div:first-child::before {
@@ -166,8 +194,10 @@ header .container {
     margin-bottom: 1em;
 }
 
-#section-2 .container div:last-child {
-    align-self: center;
+#section-2 .container div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 3em;
 }
 
@@ -215,3 +245,9 @@ footer p {
 footer span {
     font-weight: 600;
 }
+
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+
