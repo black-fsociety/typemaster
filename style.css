@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1;
 }
 
 .container {
@@ -42,6 +43,7 @@
 
 header {
     margin-bottom: 3.125em;
+    padding-top: 2em;
 }
 
 header .container {
@@ -53,6 +55,7 @@ header .container {
     background-image: url("./assets/desktop/image-keyboard.jpg");
     background-size: cover;
     border-radius: 1em;
+    height: 400px;
 }
 
 #header-btn::after {
@@ -137,6 +140,7 @@ header .container {
 #section-2 {
     position: relative;
     margin-bottom: 5em;
+    overflow: hidden;
 }
 
 #section-2::before {
@@ -192,6 +196,7 @@ header .container {
 
 #section-2 h2 {
     margin-bottom: 1em;
+    font-weight: 900;
 }
 
 #section-2 .container div:last-child {
@@ -214,14 +219,14 @@ header .container {
 .item {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2em;
+    gap: 3em;
 }
 
 .item span {
     background-color:rgb(241, 103, 24);
     display: block;
-    width: 35px;
-    height: 30px;
+    width: 55px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,8 +234,13 @@ header .container {
     border-radius: 0.3em;
 }
 
+.item .title {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
 .item img {
-    width: 15px;
+    width: 25px;
 }
 
 .item p {
@@ -255,6 +265,10 @@ footer span {
     #section-1 .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+    #section-1 .title {
+        font-size: 3rem;
     }
 
     #section-3 .container {
